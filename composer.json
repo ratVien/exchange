@@ -1,0 +1,20 @@
+{
+    "name"       : "ratvien/rate",
+    "description": "Currency rate",
+    "license"    : "MIT",
+    "authors"    : [
+        {
+            "name" : "Ivan Lalov",
+            "email": "ratvien@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Rate\\": "Services/"}
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    }
+}
