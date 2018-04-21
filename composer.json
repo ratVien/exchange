@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"Rate\\": "Services/"}
+        "psr-4": {"Rate\\": "src/"}
     },
     "require": {
         "guzzlehttp/guzzle": "^6.3"
