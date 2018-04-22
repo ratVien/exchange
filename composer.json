@@ -1,6 +1,6 @@
 {
     "name"       : "ratvien/rate",
-    "description": "Currency rate",
+    "description": "Currency exchanger for two pairs only USD/RUR and EUR/RUR",
     "license"    : "MIT",
     "authors"    : [
         {
@@ -12,9 +12,11 @@
         "psr-4": {"Rate\\": "src/"}
     },
     "require": {
+        "php": "^7.1",
+        "ext-simplexml": "*",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5"
+        "phpunit/phpunit": "7.0"
     }
 }

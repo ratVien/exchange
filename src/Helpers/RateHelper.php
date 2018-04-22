@@ -1,4 +1,5 @@
 <?php
+
 namespace Rate\Helpers;
 
 use DateTime;
@@ -11,10 +12,10 @@ trait RateHelper
      * @return bool
      * @throws \Exception
      */
-    protected function validateDate($date)
+    public function validateDate($date)
     {
         $dateToCompare = DateTime::createFromFormat('Y-m-d', $date);
-        if ($dateToCompare !== $date) {
+        if (!$dateToCompare || $dateToCompare->format('Y-m-d') != $date) {
             throw new \Exception('Date is not valid!');
         }
         return true;
@@ -26,7 +27,7 @@ trait RateHelper
      * @param string $format
      * @return string
      */
-    protected function convertDate($date, $format)
+    public function convertDate($date, $format)
     {
         $date = DateTime::createFromFormat(self::DATE_FORMAT, $date);
 
